@@ -1,0 +1,39 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.main {
+  .round {
+    border-radius: 100%;
+    width: 280px;
+  }
+
+  h3 {
+    @include text(#000000, $FontFamily, 26px, 600);
+    margin-top: 29px;
+  }
+
+  p {
+    padding-top: 10px;
+
+    a {
+      @include text(#0064EB, $FontFamily, 18px, 400);
+      margin-top: 12px;
+      padding-left: 0;
+      text-decoration: none;
+    }
+  }
+
+  .icon {
+    @include text(#191C1F, $FontFamily, 16px, 400);
+    width: 280px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .i {
+      @include text(#191C1F, $FontFamily, 16px, 400);
+      opacity: 0.7;
+      padding-right: 5px;
+    }
+  }
+}

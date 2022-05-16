@@ -1,0 +1,19 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        @include text(#000000, $FontFamily, 32px, 600);
+        @media screen and (max-width: 1370px) {
+        padding-left:0;
+        }
+    }
+}
+.zero {
+    position:absolute;
+    left: 60%;
+    top: 30%;
+}

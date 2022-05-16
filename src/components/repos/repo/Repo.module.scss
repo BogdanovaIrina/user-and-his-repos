@@ -1,0 +1,31 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.block {
+  min-height: 112px;
+  margin-top: 24px;
+
+  a {
+    @include text(#0064EB, $FontFamily, 24px, 500);
+    text-decoration: none;
+    padding-left: 32px;
+    @media screen and (max-width: 1250px) {
+      padding-left: 0;
+    }
+    @media screen and (max-width: 520px) {
+      @include text(#0064EB, $FontFamily, 18px, 500);
+    }
+  }
+
+  p {
+    @include text(#000000, $FontFamily, 18px, 400);
+    margin-top: 16px;
+    padding-left: 32px;
+    @media screen and (max-width: 1250px) {
+      padding-left: 0;
+    }
+    @media screen and (max-width: 520px) {
+      @include text(#000000, $FontFamily, 14px, 400);
+    }
+  }
+}

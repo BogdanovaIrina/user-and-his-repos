@@ -1,0 +1,31 @@
+@import "src/sass/mixins";
+@import "src/sass/variables";
+
+.main {
+  width: 220px;
+  height: 173px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .part {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+
+    p {
+      @include text(#808080, $FontFamily, 22px, 400);
+      margin-top: 57px;
+    }
+
+    .icon {
+      color: #808080;
+      font-size: 6em;
+    }
+  }
+
+}
