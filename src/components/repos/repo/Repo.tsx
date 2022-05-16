@@ -11,7 +11,7 @@ export const Repo = memo(({repos}:PropsType) => {
         <>
             {repos?.map(repo =>
                 <div className={s.block} key={repo.id}>
-                    <a href={repo.html_url} target="_blank">{repo.name}</a>
+                    <a href={repo.html_url} target="_blank" rel="noreferrer">{repo.name}</a>
                     <p>{repo.description}</p>
                 </div>)}
         </>

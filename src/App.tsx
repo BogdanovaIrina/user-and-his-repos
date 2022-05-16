@@ -1,4 +1,4 @@
-import React, {ChangeEvent, KeyboardEvent, useCallback, useEffect, useState} from 'react';
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import './App.scss';
 import axios from "axios";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

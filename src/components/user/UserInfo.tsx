@@ -18,7 +18,7 @@ export const UserInfo = memo(({user}:PropsType) => {
                     : ""}
             </div>
             <h3>{user?.name}</h3>
-            <p><a href={user?.html_url} target="_blank">{user?.login}</a></p>
+            <p><a href={user?.html_url} target="_blank" rel="noreferrer">{user?.login}</a></p>
             <div className={s.icon}>
                 <div><FontAwesomeIcon className={s.i} icon={faUserGroup}/> {user?.followers} <span>followers</span></div>
                 <div><FontAwesomeIcon className={s.i} icon={faUser}/><span> {user?.following} following</span></div>
